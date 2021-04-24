@@ -1,0 +1,12 @@
+# Price - Quantity - Discount
+# Accept price and quantity and display net amount after a discount of 15%
+price = float(input("Enter price:"))
+quantity = int(input("Enter quantity:"))
+discount = 15
+total = price*quantity
+total_discount = (total * 15) / 100
+amount = total - total_discount
+print(f"Total Price      : {total}")
+print(f"Discount         : {total_discount}")
+print(f"                 : {'-' * 10}")
+print(f"After Discount   : {amount}")
