@@ -1,0 +1,13 @@
+# Take an input from user and print it is even or odd
+
+#Method - 1
+num = int(input("Enter a number:"))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+print("The END!!")
+
+# Method - 2
+num = int(input("Enter a number:"))
+print('Even' if num % 2 == 0 else 'Odd')
