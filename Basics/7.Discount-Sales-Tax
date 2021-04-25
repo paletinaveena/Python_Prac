@@ -1,0 +1,16 @@
+# Accept quantity and price from user and display net_amount
+# if q > 3 --- 20%d, else 10% and 15% tax.
+quantity = int(input("Enter quantity:"))
+price = float(input("Enter price:"))
+if quantity > 3:
+    discount = 20
+else:
+    discount = 10
+amount = quantity * price
+dis_amount = amount - (amount * discount) / 100
+tax = dis_amount * 0.15
+total = dis_amount + tax
+print("Amount              :", amount)
+print("Discount            :", dis_amount)
+print("Tax                 :", tax )
+print("Amount to be paid   :", total)
