@@ -1,0 +1,11 @@
+# Accept a num and display it is prefect number or not
+num = int(input("Enter number:"))
+total = 0
+for i in range(1,num):
+    if num%i == 0:
+        total += i
+
+if num == total:
+    print(f"{num} is a perfect number")
+else:
+    print(f"{num} is not a perfect number")
