@@ -1,0 +1,13 @@
+# Accept a string and identify no of Upper case letters
+s = input("Enter String:")
+u_count = 0
+l_count = 0
+for i in s:
+    if i.isupper():
+        u_count += 1
+    elif i.islower():
+        l_count += 1
+    else:
+        pass
+print(f"No of uppercase characters: {u_count}")
+print(f"No of lowercase characters: {l_count}")
