@@ -1,0 +1,8 @@
+# Accept a string and print middle character after neglecting spaces
+s = input("Enter String:")
+s1 = s.replace(" ", "")
+n = len(s1)
+if n%2 == 0:
+    print(f"The middle letters of the string {s} are: {s1[(n//2)-1]} and {s1[(n//2)]}")
+else:
+    print(f"The middle letters of the string {s} are: {s1[n // 2+1]} ")
