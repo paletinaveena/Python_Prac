@@ -1,0 +1,8 @@
+# Use  filter to display string that have more than five characters from list of strings
+l = ["num", "string", "kite", "lap", 'down', "Meeting"]
+
+def length(n):
+    return len(n) > 5
+
+for n in filter(length, l):
+    print(n)
