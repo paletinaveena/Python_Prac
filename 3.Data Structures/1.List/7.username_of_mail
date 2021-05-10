@@ -1,0 +1,4 @@
+# Assuming that we have some email addresses in the "username@companyname.com" format, write program to print the user name of a given email address. 
+# Both user names and company names are composed of letters only.
+username = [x for x in input("Enter mailid:").split("@")]
+print(f"username of an mail id is {username[0]}")
