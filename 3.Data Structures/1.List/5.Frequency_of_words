@@ -1,0 +1,22 @@
+# Write a program to compute the frequency of the words from the input. 
+# The output should output after sorting the key alphanumerically. 
+# Method - 1
+l = [x for x in input("Enter String:").split(" ")]
+l.sort()
+n = len(l)
+for i in range(0,n):
+  if (l[i-1]) == (l[i]):
+    continue
+  else:
+    print(f"{l[i]} : {l.count(l[i])}")
+
+# Method - 2
+freq = {}   
+line = input("Enter String:")
+for word in line.split():
+    freq[word] = freq.get(word,0)+1
+
+words = freq.keys()
+words = sorted(words)
+for w in words:
+    print("%s:%d" % (w,freq[w]))
