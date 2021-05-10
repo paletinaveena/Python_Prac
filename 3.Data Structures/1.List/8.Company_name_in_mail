@@ -1,0 +1,6 @@
+# Assuming that we have some email addresses in the "username@companyname.com" format
+# write program to print the company name of a given email address. 
+# Both user names and company names are composed of letters only.
+mail_id = input("Enter mail id:").split("@")
+comp_name = [x for x in mail_id[1].split(".")]
+print(f"Company name of an mail id is {comp_name[0]}")
