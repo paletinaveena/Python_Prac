@@ -1,0 +1,20 @@
+# Program to check if a specified element presents in a tuple of tuples.
+def check_in_tuples(colors, c):
+    result = any(c in tu for tu in colors)
+    return result
+
+colors = (
+    ('Yellow', 'Orange', 'Green'),
+    ('Blue', 'Purple', 'Pink'),
+    ('White', 'Red', 'Olive'),
+)
+print("Original list:")
+print(colors)
+
+c1 = 'White'
+print("Check if",c1,"presenet in said tuple of tuples!")
+print(check_in_tuples(colors, c1))
+
+c1 = 'Lime'
+print("Check if",c1,"presenet in said tuple of tuples!")
+print(check_in_tuples(colors, c1))
