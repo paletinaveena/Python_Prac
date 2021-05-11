@@ -1,0 +1,12 @@
+# Program calculate the product, multiplying all the numbers of a given tuple.
+def mutiple_tuple(nums):
+    temp = list(nums)
+    product = 1 
+    for x in temp:
+        product *= x
+    return product
+
+nums = (4, 3, 2, 2, -1, 18)
+print ("Original Tuple: ")
+print(nums)
+print("Product of all the numbers in tuple:",mutiple_tuple(nums))
